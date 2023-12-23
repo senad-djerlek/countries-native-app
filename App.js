@@ -1,14 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import Countries from "./components/Countries";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Ovo je nasa prva React Native aplikacija</Text>
-      <Text> Novi Text</Text>
-      <Text>nova grana je kreirana</Text>
-      <Text>Prebacio se sa grane na granu</Text>
+      <Text>Welcome to KnowYourWorld</Text>
+      <Countries></Countries>
       <StatusBar style="auto" />
     </View>
   );
