@@ -6,11 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Welcome to KnowYourWorld</Text>
-      <Countries
-      // name={items.name}
-      // image={items.image}
-      // about={items.about}
-      ></Countries>
+      <Countries />
       <StatusBar style="auto" />
     </View>
   );
