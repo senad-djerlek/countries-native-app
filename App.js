@@ -6,6 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Ovo je nasa prva React Native aplikacija</Text>
+      <Text> Novi Text</Text>
       <StatusBar style="auto" />
     </View>
   );
