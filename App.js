@@ -7,7 +7,7 @@ export default function App() {
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Ovo je nasa prva React Native aplikacija</Text>
       <Text> Novi Text</Text>
-      <Text>demir grana</Text>
+      <Text>nova grana je kreirana</Text>
       <StatusBar style="auto" />
     </View>
   );
