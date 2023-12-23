@@ -1,19 +1,15 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Login from './Login';
-import Signup from './Signup';
-
-const Stack = createStackNavigator();
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import Countries from "./components/Countries";
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Signup" component={Signup} />
-      </Stack.Navigator>
-    </NavigationContainer>
+
+    <View style={styles.container}>
+      <Text>Welcome to KnowYourWorld</Text>
+      <Countries></Countries>
+      <StatusBar style="auto" />
+    </View>
   );
 };
 
