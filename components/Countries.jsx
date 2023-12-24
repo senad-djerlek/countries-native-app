@@ -1,35 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import { Touchable, TouchableOpacity } from "react-native";
 import { StyleSheet, Text, View, Image } from "react-native";
+import ContentItems from "./ContentItems";
 const Countries = ({ name, image, about }) => {
+  
   return (
     <View style={styles.container}>
-      <View style={styles.content}>
-        <Text>Countrie Name: Nemacka</Text>
-        <Image
-          style={styles.flag}
-          source={{
-            uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/255px-Flag_of_Germany.svg.png",
-          }}
-        />
-        <Text>Countrie About: Nesto </Text>
+      <ContentItems/>
+      <ContentItems/>
       </View>
-    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    width: 250,
-    height: 180,
-    backgroundColor: "gray",
-    borderRadius: 13,
-  },
-  content: {
-    padding: 10,
-  },
-  flag: {
-    width: 100,
-    height: 70,
-  },
+  justifyContent: 'space-around',
+  gap: 20,
+  display:"flex",
+  flexDirection:"row",
+  }
 });
 export default Countries;

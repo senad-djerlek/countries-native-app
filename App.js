@@ -5,7 +5,7 @@ import Countries from "./components/Countries";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Welcome to KnowYourWorld</Text>
+      <Text style={styles.heading}>Welcome to KnowYourWorld</Text>
       <Countries />
       <StatusBar style="auto" />
     </View>
@@ -14,9 +14,14 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    marginTop: 80,
+    display:"flex",
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
+  heading: {
+    fontSize: 20,
+    marginBottom: 50,
+  }
 });
