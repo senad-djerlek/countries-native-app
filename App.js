@@ -16,12 +16,10 @@ const styles = StyleSheet.create({
   container: {
     marginTop: 80,
     display: "flex",
-    // backgroundColor: "#fff",
-    // alignItems: "center",
-    // justifyContent: "center",
   },
   heading: {
     fontSize: 20,
     marginBottom: 50,
+    textAlign: "center",
   },
 });
