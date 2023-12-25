@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   },
   flag: {
     width: "auto",
-    height: 65,
+    height: 66,
     borderRadius: 10,
   },
 });
