@@ -7,7 +7,7 @@ const ContentItems = ({ name, population, image, onPress, isExpanded }) => {
       <View style={styles.container}>
         <View
           style={{
-            height: isExpanded ? "auto" : 70,
+            height: isExpanded ? "auto" : 92,
           }}
         >
           <View style={styles.content}>
@@ -19,8 +19,8 @@ const ContentItems = ({ name, population, image, onPress, isExpanded }) => {
             />
 
             <View style={styles.content}>
-              <Text>Country Name: {name}</Text>
-              <Text>Populacija: {population}</Text>
+              <Text>{name}</Text>
+              <Text>Population:{population}</Text>
             </View>
           </View>
         </View>
@@ -30,19 +30,20 @@ const ContentItems = ({ name, population, image, onPress, isExpanded }) => {
 };
 const styles = StyleSheet.create({
   container: {
-    width: 100,
+    width: 120,
     flex: "wrap",
     backgroundColor: "gray",
     borderRadius: 10,
     overflow: "hidden",
-    margin: 4,
   },
+
   content: {
-    padding: 10,
+    padding: 3,
   },
   flag: {
     width: "auto",
-    height: 50,
+    height: 65,
+    borderRadius: 10,
   },
 });
 

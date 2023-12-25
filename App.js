@@ -14,12 +14,14 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 80,
+    marginTop: 45,
     display: "flex",
+    alignItems: "center",
   },
   heading: {
     fontSize: 20,
-    marginBottom: 50,
+    marginBottom: 20,
+    marginTop: 20,
     textAlign: "center",
   },
 });
