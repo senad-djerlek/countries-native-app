@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Touchable, TouchableOpacity } from "react-native";
 import { StyleSheet, Text, View, Image } from "react-native";
 import ContentItems from "./ContentItems";
+import Buton from "./Buton";
 const Countries = () => {
   const [countriesData, setCountriesData] = useState([
     {
@@ -82,6 +83,18 @@ const Countries = () => {
   const toggleExpand = (itemId) => {
     setExpandedId((prevId) => (prevId === itemId ? null : itemId));
   };
+  // const [newText, setNewText] = useState(null);
+  // const [newTexts, setNewTexts] = useState("");
+
+  // const changeText = () => {
+  //   setNewText(true);
+  //   if (newText) {
+  //     setNewTexts("Seka");
+  //     setNewText(false);
+  //   } else if (!newText) {
+  //     setNewTexts("Demir");
+  //   }
+  // };
 
   return (
     <View style={styles.container}>
@@ -96,6 +109,7 @@ const Countries = () => {
           onPress={() => toggleExpand(el.id)}
         />
       ))}
+      {/* <Buton text={newTexts} onClick={changeText} /> */}
     </View>
   );
 };
