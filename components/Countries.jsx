@@ -30,15 +30,51 @@ const Countries = () => {
     },
     {
       id: 5,
-      name: "Indonesia",
-      population: 276361783,
-      flagImageUrl: "https://flagcdn.com/w320/id.png",
+      name: "Japan",
+      population: 125360000,
+      flagImageUrl: "https://flagcdn.com/w320/jp.png",
     },
     {
       id: 6,
-      name: "Indonesia",
-      population: 276361783,
-      flagImageUrl: "https://flagcdn.com/w320/id.png",
+      name: "Brazil",
+      population: 213993437,
+      flagImageUrl: "https://flagcdn.com/w320/br.png",
+    },
+    {
+      id: 7,
+      name: "Australia",
+      population: 25766663,
+      flagImageUrl: "https://flagcdn.com/w320/au.png",
+    },
+    {
+      id: 8,
+      name: "France",
+      population: 65273511,
+      flagImageUrl: "https://flagcdn.com/w320/fr.png",
+    },
+    {
+      id: 9,
+      name: "Canada",
+      population: 37742154,
+      flagImageUrl: "https://flagcdn.com/w320/ca.png",
+    },
+    {
+      id: 10,
+      name: "South Africa",
+      population: 59973300,
+      flagImageUrl: "https://flagcdn.com/w320/za.png",
+    },
+    {
+      id: 11,
+      name: "South Korea",
+      population: 51269185,
+      flagImageUrl: "https://flagcdn.com/w320/kr.png",
+    },
+    {
+      id: 14,
+      name: "Mexico",
+      population: 128932753,
+      flagImageUrl: "https://flagcdn.com/w320/mx.png",
     },
   ]);
   const [expandedId, setExpandedId] = useState(null);
@@ -67,9 +103,11 @@ const Countries = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    maxWidth: 250,
+    justifyContent: "space-between",
+    maxWidth: 330,
     flexWrap: "wrap",
-    justifyContent: "space-around",
+    // backgroundColor: "blue",
+    gap: 20,
   },
 });
 export default Countries;
