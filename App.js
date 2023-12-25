@@ -4,6 +4,7 @@ import Countries from "./components/Countries";
 import { useState } from "react";
 import Buton from "./components/Buton";
 import Landingpage from "./components/Landingpage";
+import Globe from "./components/Globe";
 export default function App() {
   const [onPressButton, setOnPressButton] = useState(false);
   const onPress = () => {
@@ -19,8 +20,8 @@ export default function App() {
         text={onPressButton ? "Vrati me" : "Stisni me da odes na glavnu"}
         onClick={onPress}
       ></Buton>
+      
       {onPressButton ? <Countries /> : <Landingpage />}
-
       <StatusBar style="auto" />
     </View>
   );
