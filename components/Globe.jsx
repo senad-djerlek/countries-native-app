@@ -35,13 +35,11 @@ const styles = StyleSheet.create({
   globe: {
     width: 300,
     height: 300,
-    borderRadius: '50%',
     overflow: 'hidden',
   },
   globeImage: {
     width: '100%',
     height: '100%',
-    borderRadius: 100,
   },
 });
 
