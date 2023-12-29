@@ -83,18 +83,8 @@ const Countries = () => {
   const toggleExpand = (itemId) => {
     setExpandedId((prevId) => (prevId === itemId ? null : itemId));
   };
-  // const [newText, setNewText] = useState(null);
-  // const [newTexts, setNewTexts] = useState("");
 
-  // const changeText = () => {
-  //   setNewText(true);
-  //   if (newText) {
-  //     setNewTexts("Seka");
-  //     setNewText(false);
-  //   } else if (!newText) {
-  //     setNewTexts("Demir");
-  //   }
-  // };
+  const image = "https://flagcdn.com/w320/cn.png";
 
   return (
     <View style={styles.container}>
