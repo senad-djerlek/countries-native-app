@@ -84,6 +84,8 @@ const Countries = () => {
     setExpandedId((prevId) => (prevId === itemId ? null : itemId));
   };
 
+  const image = "https://flagcdn.com/w320/cn.png";
+
   return (
     <View style={styles.container}>
       {countriesData.map((el) => (

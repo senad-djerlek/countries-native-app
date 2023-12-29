@@ -3,8 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import Globe from "./Globe";
 const Landingpage = () => {
   return (
-    <View>
-      <Text>Hello User</Text>
+    <View style={styles.container}>
       <Globe />
     </View>
   );
@@ -12,7 +11,7 @@ const Landingpage = () => {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: "center",
+    display: "flex",
   },
 });
 

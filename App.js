@@ -1,10 +1,11 @@
 import { StatusBar } from "expo-status-bar";
+import { NativeBaseProvider, Box } from "native-base";
 import { StyleSheet, Text, View } from "react-native";
 import Countries from "./components/Countries";
 import { useState } from "react";
 import Buton from "./components/Buton";
 import Landingpage from "./components/Landingpage";
-import Globe from "./components/Globe";
+
 export default function App() {
   const [onPressButton, setOnPressButton] = useState(false);
   const onPress = () => {
@@ -15,22 +16,24 @@ export default function App() {
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.heading}>Welcome to KnowYourWorld</Text>
-      <Buton
-        text={onPressButton ? "Vrati me" : "Stisni me da odes na glavnu"}
-        onClick={onPress}
-      ></Buton>
-      
-      {onPressButton ? <Countries /> : <Landingpage />}
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider>
+      <View style={styles.container}>
+        <Text style={styles.heading}>Welcome to KnowYourWorld</Text>
+        <Buton
+          text={onPressButton ? "Vrati me" : "Stisni me da odes na glavnu"}
+          onClick={onPress}
+        ></Buton>
+
+        {onPressButton ? <Countries /> : <Landingpage />}
+        <StatusBar style="auto" />
+      </View>
+    </NativeBaseProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 45,
+    marginTop: 30,
     display: "flex",
     alignItems: "center",
   },

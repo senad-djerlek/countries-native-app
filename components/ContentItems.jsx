@@ -31,7 +31,6 @@ const ContentItems = ({ name, population, image, onPress, isExpanded }) => {
 const styles = StyleSheet.create({
   container: {
     width: 120,
-    backgroundColor: "gray",
     borderRadius: 10,
     overflow: "hidden",
   },
@@ -41,7 +40,7 @@ const styles = StyleSheet.create({
   },
   flag: {
     width: "auto",
-    height: 66,
+    height: 70,
     borderRadius: 10,
   },
 });
