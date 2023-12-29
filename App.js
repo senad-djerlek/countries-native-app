@@ -12,6 +12,7 @@ export default function App() {
       setOnPressButton(false);
     }
   };
+
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Welcome to KnowYourWorld</Text>
@@ -20,7 +21,6 @@ export default function App() {
         onClick={onPress}
       ></Buton>
       {onPressButton ? <Countries /> : <Landingpage />}
-
       <StatusBar style="auto" />
     </View>
   );
